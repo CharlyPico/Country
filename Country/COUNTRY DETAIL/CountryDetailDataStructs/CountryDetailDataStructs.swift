@@ -11,40 +11,49 @@ struct CountryDataDetailStruct:Identifiable {
     let id = UUID()
     var countryOfficialName:String
     var countryFlagDescription:String
-    var countryCapitalCity:String
+    var countryCapitalCity:[String]
     var countryRegion:String
-    var countryLanguage:String
+    var countrySubRegion:String
+    var countryLanguages:[String:Any]
+    var countryLanguagesString:String
     var countryMainCurrency:[String:Any]
     var countryTotalPopulation:Int64
-    var countryCode:String
     var countryCallingCode:String
     var countryClosestBorders:[String]
     
-    init(countryOfficialName: String, countryFlagDescription: String, countryCapitalCity: String, countryRegion: String, countryLanguage: String, countryMainCurrency: [String:Any], countryTotalPopulation: Int64, countryCode: String, countryCallingCode: String, countryClosestBorders: [String]) {
+    init(countryOfficialName: String, countryFlagDescription: String, countryCapitalCity: [String], countryRegion: String, countrySubRegion:String, countryLanguages: [String:Any], countryLanguagesString:String, countryMainCurrency: [String:Any], countryTotalPopulation: Int64, countryCallingCode: String, countryClosestBorders: [String]) {
         self.countryOfficialName = countryOfficialName
         self.countryFlagDescription = countryFlagDescription
         self.countryCapitalCity = countryCapitalCity
         self.countryRegion = countryRegion
-        self.countryLanguage = countryLanguage
+        self.countrySubRegion = countrySubRegion
+        self.countryLanguages = countryLanguages
+        self.countryLanguagesString = countryLanguagesString
         self.countryMainCurrency = countryMainCurrency
         self.countryTotalPopulation = countryTotalPopulation
-        self.countryCode = countryCode
         self.countryCallingCode = countryCallingCode
         self.countryClosestBorders = countryClosestBorders
     }
     
-    init?(array:[Any]) {
-        guard array.count == 10 else {return nil}
-        
-        countryOfficialName = array[0] as? String ?? ""
-        countryFlagDescription = array[1] as? String ?? ""
-        countryCapitalCity = array[2] as? String ?? ""
-        countryRegion = array[3] as? String ?? ""
-        countryLanguage = array[4] as? String ?? ""
-        countryMainCurrency = array[5] as? [String:Any] ?? ["":""]
-        countryTotalPopulation = array[6] as? Int64 ?? 0
-        countryCode = array[7] as? String ?? ""
-        countryCallingCode = array[8] as? String ?? ""
-        countryClosestBorders = array[9] as? [String] ?? []
+    init(_ dictionary:[String:Any]) {
+        countryOfficialName = (dictionary["name"] as? [String:Any])?["official"] as? String ?? "No name".localized
+        countryFlagDescription = (dictionary["flags"] as? [String:Any])?["alt"] as? String ?? "No flag information".localized
+        countryCapitalCity = dictionary["capital"] as? [String] ?? []
+        countryRegion = dictionary["region"] as? String ?? "No region".localized
+        countrySubRegion = dictionary["subregion"] as? String ?? "No subregion".localized
+        countryLanguages = dictionary["languages"] as? [String:Any] ?? ["":""]
+        countryLanguagesString = "No language".localized
+        countryMainCurrency = dictionary["currencies"] as? [String:Any] ?? ["":""]
+        countryTotalPopulation = dictionary["population"] as? Int64 ?? 0
+        countryCallingCode = (dictionary["idd"] as? [String:Any])?["root"] as? String ?? "No calling code".localized
+        countryClosestBorders = dictionary["borders"] as? [String] ?? []
+    }
+}
+
+struct CountryDetailStructMap {
+    let countryDetailArray:[CountryDataDetailStruct]
+    init?(_ data:Data) {
+        guard let array = (try? JSONSerialization.jsonObject(with: data)) as? [[String:Any]] else {return nil}
+        countryDetailArray = array.map(CountryDataDetailStruct.init)
     }
 }

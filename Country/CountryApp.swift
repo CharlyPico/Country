@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct CountryApp: App {
+    let countryObservable = CountryObservable()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CountryView()
+                .environmentObject(countryObservable)
         }
     }
 }

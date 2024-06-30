@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-struct CountryObservable: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    CountryObservable()
+class CountryObservable:ObservableObject {
+    @Published var countriesArray:[CountryDataStruct] = []
 }

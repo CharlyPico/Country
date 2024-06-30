@@ -7,12 +7,32 @@
 
 import SwiftUI
 
-struct CountryViewStructs: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct CountryDataStruct:Identifiable {
+    let id = UUID()
+    var countryCode:String
+    var countryName:String
+    var countryFlag:String
+    var countryDetails:CountryDataDetailStruct?
+    
+    init(countryCode: String, countryName: String, countryFlag: String, countryDetails:CountryDataDetailStruct?) {
+        self.countryCode = countryCode
+        self.countryName = countryName
+        self.countryFlag = countryFlag
+        self.countryDetails = countryDetails
+    }
+    
+    init(_ dictionary:[String:Any]) {
+        countryCode = dictionary["cca3"] as? String ?? ""
+        countryName = (dictionary["name"] as? [String:Any])?["common"] as? String ?? ""
+        countryFlag = (dictionary["flags"] as? [String:Any])?["png"] as? String ?? ""
+        countryDetails = dictionary["countryDetails"] as? CountryDataDetailStruct ?? nil
     }
 }
 
-#Preview {
-    CountryViewStructs()
+struct CountryDataStructMap {
+    let countriesList:[CountryDataStruct]
+    init?(_ data:Data) {
+        guard let array = (try? JSONSerialization.jsonObject(with: data)) as? [[String:Any]] else {return nil}
+        countriesList = array.map(CountryDataStruct.init)
+    }
 }

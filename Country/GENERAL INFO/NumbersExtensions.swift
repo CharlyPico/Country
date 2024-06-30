@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+extension Formatter {
+    static let withSeparatorNoDecimals: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.maximumFractionDigits = 2
+        formatter.minimumFractionDigits = 0
+        formatter.groupingSeparator = ","
+        formatter.numberStyle = .decimal
+        return formatter
+    }()
+}
+
+extension Numeric {
+    var formattedWithSeparatorNoDecimals: String {
+        return Formatter.withSeparatorNoDecimals.string(for: self) ?? ""
+    }
+}
