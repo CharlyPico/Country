@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import SafariServices
+import WebKit
 
 struct CountryDataDetailStruct:Identifiable {
     let id = UUID()
@@ -20,8 +22,9 @@ struct CountryDataDetailStruct:Identifiable {
     var countryTotalPopulation:Int64
     var countryCallingCode:String
     var countryClosestBorders:[String]
+    var countryGoogleMapsURLString:String
     
-    init(countryOfficialName: String, countryFlagDescription: String, countryCapitalCity: [String], countryRegion: String, countrySubRegion:String, countryLanguages: [String:Any], countryLanguagesString:String, countryMainCurrency: [String:Any], countryTotalPopulation: Int64, countryCallingCode: String, countryClosestBorders: [String]) {
+    init(countryOfficialName: String, countryFlagDescription: String, countryCapitalCity: [String], countryRegion: String, countrySubRegion:String, countryLanguages: [String:Any], countryLanguagesString:String, countryMainCurrency: [String:Any], countryTotalPopulation: Int64, countryCallingCode: String, countryClosestBorders: [String], countryGoogleMapsURLString:String) {
         self.countryOfficialName = countryOfficialName
         self.countryFlagDescription = countryFlagDescription
         self.countryCapitalCity = countryCapitalCity
@@ -33,6 +36,7 @@ struct CountryDataDetailStruct:Identifiable {
         self.countryTotalPopulation = countryTotalPopulation
         self.countryCallingCode = countryCallingCode
         self.countryClosestBorders = countryClosestBorders
+        self.countryGoogleMapsURLString = countryGoogleMapsURLString
     }
     
     init(_ dictionary:[String:Any]) {
@@ -47,6 +51,7 @@ struct CountryDataDetailStruct:Identifiable {
         countryTotalPopulation = dictionary["population"] as? Int64 ?? 0
         countryCallingCode = (dictionary["idd"] as? [String:Any])?["root"] as? String ?? "No calling code".localized
         countryClosestBorders = dictionary["borders"] as? [String] ?? []
+        countryGoogleMapsURLString = (dictionary["maps"] as? [String:Any])?["googleMaps"] as? String ?? ""
     }
 }
 
