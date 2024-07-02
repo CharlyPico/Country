@@ -7,8 +7,8 @@
 
 //Here are stored all the custom server endpoints and variables.
 struct CountryNotesServer {
-    private let iosUsername = "majority"
-    private let iosPassword = "mpSw-23Dsc-qs3S-wlM."
+    private let iosUsername = "USERNAME"
+    private let iosPassword = "PASSWORD"
     let mainURL = "https://www.barbapps.co/projects/countries"
     let loadNotes = "/load_notes.php"
     let insertNewNote = "/insert_note.php"
