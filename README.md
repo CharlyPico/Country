@@ -1,12 +1,15 @@
 ![banner](https://github.com/CharlyPico/Jiffy/assets/6773158/3c495edd-26f4-4bcf-872d-41080ca4b22a)
 
-<h1>Welcome to Jiffy!</h1>
+# Welcome to Jiffy!
 
 A simple App that shows you important data about any country you can imagine.
 
 <ul>
   <li>
     Get a list of all Countries.
+  </li>
+  <li>
+    Filter the list of countries with the Search bar at the top of the Countries view.
   </li>
   <li>
     See important detailed data about the Selected Country by tapping the chosen country.
@@ -21,22 +24,22 @@ A simple App that shows you important data about any country you can imagine.
 
 ![device](https://github.com/CharlyPico/Jiffy/assets/6773158/e663a1d1-23e7-40d5-80cf-e80d2e755734)
 
-<h1>Special Features</h1>
+## Special Features
 
-<h3>Localization</h3>
+### Localization
 
 Localized and ready in **Spanish**, **English** & **Swedish**
 
 
 ![localization](https://github.com/CharlyPico/Jiffy/assets/6773158/5b9b17de-bddf-4ab3-a2f8-e023f378332b)
 
-<h3>Between Light & Dark</h3>
+### Between Light & Dark
 
 Jiffy is ready for dark and light environments!
 
 ![dark_light](https://github.com/CharlyPico/Jiffy/assets/6773158/78d9972b-35b0-4425-8af6-de3f3268c23b)
 
-<h3>Cross Device Ready!</h3>
+### Cross Device Ready!
 
 Enjoy Jiffy on an iOS, iPadOS and macOS device!
 
@@ -45,7 +48,7 @@ Enjoy Jiffy on an iOS, iPadOS and macOS device!
 
 So, what are you wating for?! Go download this project for **FREE**.
 
-<h2>Requirements</h2>
+## Requirements
 <ul>
   <li>
     Xcode 15.0.
@@ -61,10 +64,19 @@ So, what are you wating for?! Go download this project for **FREE**.
   </li>
 </ul>
 
-<h2>Documentation</h2>
+## Documentation
 
-<h3>Packages Dependencies</h3>
-The installation of the Use **SDWebImageSwiftUI** package is required:
+### Package Dependencies
+The installation of  `SDWebImageSwiftUI` package is required:
 
 <img width="1456" alt="sdwebimage" src="https://github.com/CharlyPico/Jiffy/assets/6773158/6b0f422e-1971-4b47-81be-d26f584b2440">
 
+### 3RD Party
+<ul>
+  <li>
+    Jiffy Countries data is loaded from the https://restcountries.com API and its functionality depends on https://restcountries.com existence.
+  </li>
+  <li>
+    Jiffy Notes uses an external server that is maintained by the owner of this project. We advice on using your own server for future usage.
+  </li>
+</ul>
