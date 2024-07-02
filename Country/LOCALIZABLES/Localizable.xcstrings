@@ -1,7 +1,838 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
 
+    },
+    " + " : {
+
+    },
+    " and Notes " : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " y Notas "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " och anteckningar "
+          }
+        }
+      }
+    },
+    " by tapping the navigation buttons." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " tocando los botones de navegación."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " genom att trycka på navigationsknapparna."
+          }
+        }
+      }
+    },
+    "Access the Google Maps map " : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accede al mapa de Google Maps "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öppna Google Maps-kartan "
+          }
+        }
+      }
+    },
+    "Are you sure you want to delete this note?" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Estás seguro de que quieres eliminar esta nota?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Är du säker på att du vill ta bort denna anteckning?"
+          }
+        }
+      }
+    },
+    "Basic Information" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Información Básica"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grundläggande information"
+          }
+        }
+      }
+    },
+    "Calling Code" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Código de llamada"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riktnummer"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avbryt"
+          }
+        }
+      }
+    },
+    "Capital City" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capital"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huvudstad"
+          }
+        }
+      }
+    },
+    "Closest Borders" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fronteras más cercanas"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Närmaste gränser"
+          }
+        }
+      }
+    },
+    "Common Name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre común"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vanligt namn"
+          }
+        }
+      }
+    },
+    "Connection" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conexión"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anslutning"
+          }
+        }
+      }
+    },
+    "Countries" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Países"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Länder"
+          }
+        }
+      }
+    },
+    "Country Code" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Código del país"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Landskod"
+          }
+        }
+      }
+    },
+    "Country Map" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mapa del país"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Landskarta"
+          }
+        }
+      }
+    },
+    "Country Notes" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notas del país"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Landsanteckningar"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Radera"
+          }
+        }
+      }
+    },
+    "Delete Note" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar nota"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Radera anteckning"
+          }
+        }
+      }
+    },
+    "Deletion Error" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error al Eliminar"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raderingsfel"
+          }
+        }
+      }
+    },
+    "Edit" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redigera"
+          }
+        }
+      }
+    },
+    "Error" : {
+      "localizations" : {
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fel"
+          }
+        }
+      }
+    },
+    "Extra Details" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detalles adicionales"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ytterligare detaljer"
+          }
+        }
+      }
+    },
+    "icon." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ícono."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ikon."
+          }
+        }
+      }
+    },
+    "Internet" : {
+
+    },
+    "Loading notes, please wait..." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cargando notas, por favor espera..."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laddar anteckningar, var god vänta..."
+          }
+        }
+      }
+    },
+    "Main Currency" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moneda principal"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huvudvaluta"
+          }
+        }
+      }
+    },
+    "Main Language" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idioma principal"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huvudspråk"
+          }
+        }
+      }
+    },
+    "Map Error" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error de mapa"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kartfel"
+          }
+        }
+      }
+    },
+    "More Details" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Más detalles"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mer detaljer"
+          }
+        }
+      }
+    },
+    "New Note" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nueva nota"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ny anteckning"
+          }
+        }
+      }
+    },
+    "No" : {
+      "localizations" : {
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nej"
+          }
+        }
+      }
+    },
+    "No borders" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin fronteras"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inga gränser"
+          }
+        }
+      }
+    },
+    "No calling code" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin código de llamada"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inget landsnummer"
+          }
+        }
+      }
+    },
+    "No currency" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin moneda"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen valuta"
+          }
+        }
+      }
+    },
+    "No flag information" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin información de bandera"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen flagginformation"
+          }
+        }
+      }
+    },
+    "No population" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin población"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen befolkning"
+          }
+        }
+      }
+    },
+    "No region" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin región"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen region"
+          }
+        }
+      }
+    },
+    "No subregion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sin subregión"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen subregion"
+          }
+        }
+      }
+    },
+    "Official Name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre oficial"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Officiellt namn"
+          }
+        }
+      }
+    },
+    "Ok" : {
+
+    },
+    "Please connect to the internet and try again" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por favor, conéctate a internet e intenta nuevamente"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anslut till internet och försök igen"
+          }
+        }
+      }
+    },
+    "Please select an option" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por favor, selecciona una opción"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välj ett alternativ"
+          }
+        }
+      }
+    },
+    "Population" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Población"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Befolkning"
+          }
+        }
+      }
+    },
+    "Region" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Región"
+          }
+        }
+      }
+    },
+    "Register" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registrar"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registrera"
+          }
+        }
+      }
+    },
+    "Retry" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reintentar"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Försök igen"
+          }
+        }
+      }
+    },
+    "Subregion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subregión"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subregion"
+          }
+        }
+      }
+    },
+    "Unable to delete note, please try again" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se puede eliminar la nota, por favor inténtalo nuevamente"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kan inte ta bort anteckningen, försök igen"
+          }
+        }
+      }
+    },
+    "Unable to retreive notes, please try again" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pueden recuperar las notas, por favor inténtalo nuevamente"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kan inte hämta anteckningar, försök igen"
+          }
+        }
+      }
+    },
+    "Update" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualizar"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uppdatera"
+          }
+        }
+      }
+    },
+    "Welcome to Jiffy, please tap any desired country to get more information" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenido a Jiffy, por favor toca cualquier país deseado para obtener más información"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välkommen till Jiffy, tryck på valfritt land för att få mer information"
+          }
+        }
+      }
+    },
+    "Write your new note here..." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe tu nueva nota aquí..."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv din nya anteckning här..."
+          }
+        }
+      }
+    },
+    "Yes" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sí"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ja"
+          }
+        }
+      }
+    },
+    "You haven't created any notes. To Create a new note, tap the" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No has creado ninguna nota. Para crear una nueva nota, toca"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du har inte skapat några anteckningar. För att skapa en ny anteckning, tryck på"
+          }
+        }
+      }
+    }
   },
   "version" : "1.0"
 }

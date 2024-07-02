@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//This is our observableObject which is used through the entire App. It stores the Countries' data.
 class CountryObservable:ObservableObject {
     @Published var countriesArray:[CountryDataStruct] = []
 }

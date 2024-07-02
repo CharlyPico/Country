@@ -41,27 +41,27 @@ struct NoteViewCell: View {
                         .resizable()
                         .frame(width: 20, height: 20)
                     //In here I present the user a '.confirmationDialog' to give the option to 'edit' or 'delete' a note.
-                    .confirmationDialog("Please select an option".localized, isPresented: $showNoteOptions, actions: {
+                    .confirmationDialog("Please select an option", isPresented: $showNoteOptions, actions: {
                         Button(action: {
                             editingNote = true
                             createNewNote = true
                         }) {
-                            Text("Edit".localized)
+                            Text("Edit")
                         }
                         Button(role: .destructive, action: {
                             haptic(type: .warning)
                             deleteAction = true
                         }) {
-                            Text("Delete".localized)
+                            Text("Delete")
                         }
                         Button(role: .cancel, action: {}) {
-                            Text("Cancel".localized)
+                            Text("Cancel")
                         }
                     })
                 })
                 .buttonStyle(.borderless)
                 .alert(isPresented: $deleteAction, content: {
-                    return Alert(title: Text("Delete Note".localized), message: Text("Are you sure you want to delete this note?".localized), primaryButton: Alert.Button.destructive(Text("Yes".localized), action: {
+                    return Alert(title: Text("Delete Note"), message: Text("Are you sure you want to delete this note?"), primaryButton: Alert.Button.destructive(Text("Yes"), action: {
                         //Here I remove the optional value of the note and send it's 'noteServerID' to the delete function. If not, an error is is shown (I use '.asyncAfter' to give the alert time to update, otherwise the error alert won't display).
                         guard let selNote = selectedNote else {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
@@ -72,7 +72,7 @@ struct NoteViewCell: View {
                             return
                         }
                         deleteNoteFunction(withID: selNote.noteServerID)
-                    }), secondaryButton: Alert.Button.default(Text("No".localized)))
+                    }), secondaryButton: Alert.Button.default(Text("No")))
                 })
             }
         }

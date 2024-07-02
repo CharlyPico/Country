@@ -7,6 +7,7 @@
 
 import Foundation
 
+//I created this NumbersExtensions file to separate large numbers with a thousands separator (here in México we use the , symbol).
 extension Formatter {
     static let withSeparatorNoDecimals: NumberFormatter = {
         let formatter = NumberFormatter()

@@ -8,7 +8,9 @@
 import SystemConfiguration
 import Foundation
 
-class WebInformation {
+//In here I created the WebInformation struct. This includes the main API URL and default URLSessionConfiguration used through the App.
+
+struct WebInformation {
     let countryAPIMainURL = "https://restcountries.com/v3.1"
 
     var generalUrlSessionConfiguration:URLSessionConfiguration {
@@ -21,6 +23,7 @@ class WebInformation {
         return sessionConfig
     }
 
+    //This function is to check if the device is connected to the internet or not. This helps to show the user an alert that an internet connection is required.
     func isInternetAvailable() -> Bool
     {
         var zeroAddress = sockaddr_in()
@@ -42,6 +45,7 @@ class WebInformation {
         return (isReachable && !needsConnection)
     }
 
+    //This function returns the default URL that is used to get all countries data.
     func urlToLoad(_ urlAppending:String) -> URL {
        return URL(string: countryAPIMainURL.appending(urlAppending)) ?? URL(string: "https://www.apple.com")!
     }

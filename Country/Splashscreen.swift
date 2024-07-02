@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct Splashscreen: View {
+    @EnvironmentObject var countryObservable:CountryObservable
+    @State var showSplash = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            if showSplash {
+                CountryView()
+                    .environmentObject(countryObservable)
+            }else{
+                Image("jiffy_splash")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 150, height: 150)
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(
+            Color(.systemGroupedBackground)
+        )
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                withAnimation {
+                    showSplash = true
+                }
+            }
+        }
     }
-}
-
-#Preview {
-    Splashscreen()
+        
 }

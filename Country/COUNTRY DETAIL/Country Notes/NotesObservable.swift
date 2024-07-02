@@ -7,12 +7,7 @@
 
 import SwiftUI
 
-struct NotesObservable: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    NotesObservable()
+//This is our observableObject which is used when creating, deleting or updating notes. It stores the Notes' data.
+class NotesObservable:ObservableObject {
+    @Published var notesArray:[CountryNotesDataStruct] = []
 }
