@@ -66,6 +66,10 @@ So, what are you wating for?! Go download this project for **FREE**.
 
 ## Documentation
 
+### Credentials (Username & Password)
+
+To access the Notes feature, an `USERNAME` and `PASSWORD` are needed. If I provided one, please open the `CountryNotesServer.swift` file inside the `GENERAL INFO` folder and replace them with the provided credentials.
+
 ### Package Dependencies
 The installation of  `SDWebImageSwiftUI` package is required:
 
