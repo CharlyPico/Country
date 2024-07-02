@@ -1,18 +1,18 @@
 //
-//  CountryNotesItems.swift
+//  CountryCellStruct.swift
 //  Country
 //
-//  Created by Charlie Pico on 01/07/24.
+//  Created by Charlie Pico on 02/07/24.
 //
 
 import SwiftUI
 
-struct CountryNotesItems: View {
+struct CountryCellStruct: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    CountryNotesItems()
+    CountryCellStruct()
 }
